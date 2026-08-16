@@ -1,0 +1,24 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Id": "shunt",
+        "Name": "Shunt",
+        "Description": "Îi spune lui Shunt din ce aplicație vine link-ul și îi așază fereastra sub cursor",
+        "Version": "1.0",
+        "License": "MIT",
+        "Category": "Window Management",
+        "Icon": "internet-web-browser",
+        "Authors": [
+            {
+                "Name": "George Dumitrescu"
+            }
+        ],
+        "EnabledByDefault": true,
+        "ServiceTypes": [
+            "KWin/Script"
+        ]
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

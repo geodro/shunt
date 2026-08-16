@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Iconița de aplicație: placă plină, ca să țină piept iconițelor colorate din
+     lansator. Placa urmează culoarea de accent prin convenția Breeze: foaia de
+     stil cu id-ul current-color-scheme e rescrisă de Plasma la încărcare, iar
+     ColorScheme-Highlight e chiar accentul în Plasma 6. Drumurile rămân albe,
+     fiindcă stau pe o placă saturată. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style type="text/css" id="current-color-scheme">
+      .ColorScheme-Highlight { color: #3daee9; }
+    </style>
+  </defs>
+  <rect class="ColorScheme-Highlight" width="48" height="48" rx="11" fill="currentColor"/>
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M24 36.5 V25" stroke-width="4" opacity=".45"/>
+    <path d="M24 25 C 24 20.6 20.6 16.8 15.6 12" stroke-width="3.2" opacity=".45"/>
+    <path d="M24 25 C 24 20.6 27.4 16.8 32.4 12" stroke-width="4"/>
+  </g>
+  <rect x="20.5" y="27.5" width="7" height="7" rx="1.6"
+        transform="rotate(45 24 31)" fill="#ffffff"/>
+</svg>

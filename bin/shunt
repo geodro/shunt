@@ -1,0 +1,9 @@
+#!/bin/sh
+# Merge în ambele layout-uri: clone (bin/ lângă shunt/) și pachet (/usr/lib/shunt).
+ROOT="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
+if [ -f "$ROOT/shunt/__main__.py" ]; then
+    LIB="$ROOT"
+else
+    LIB="/usr/lib/shunt"
+fi
+PYTHONPATH="$LIB${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m shunt "$@"

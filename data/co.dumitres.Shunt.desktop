@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Shunt
+GenericName=Selector de browser
+Comment=Alege browserul în care se deschide fiecare link
+Icon=co.dumitres.Shunt
+Exec=@BIN@ %u
+Terminal=false
+DBusActivatable=true
+StartupNotify=false
+Categories=Network;Utility;Settings;
+Keywords=browser;chooser;link;default;
+MimeType=x-scheme-handler/http;x-scheme-handler/https;

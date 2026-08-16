@@ -1,0 +1,16 @@
+[Unit]
+Description=Shunt — selector de browser
+PartOf=graphical-session.target
+After=plasma-kwin_wayland.service
+
+[Service]
+# callDBus din scriptul KWin nu pornește serviciul dacă e oprit, deci daemonul
+# trebuie să fie deja sus ca să vadă schimbările de fereastră activă.
+Type=dbus
+BusName=co.dumitres.Shunt
+ExecStart=@BIN@
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,20 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m compileall -q shunt
+      - run: bash -n install.sh packaging/*.sh bin/shunt
+      - name: KWin script parses as JavaScript
+        run: node --check kwin/contents/code/main.js

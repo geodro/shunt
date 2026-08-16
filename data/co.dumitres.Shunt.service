@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=co.dumitres.Shunt
+Exec=@BIN@
+SystemdService=shunt.service

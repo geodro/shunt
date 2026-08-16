@@ -31,7 +31,7 @@ where the cursor is. Plasma 6 only; the Plasma 5 scripting API differs.
 %{_datadir}/applications/co.dumitres.Shunt.desktop
 %{_datadir}/dbus-1/services/co.dumitres.Shunt.service
 %{_datadir}/kwin/scripts/shunt/
-%{_datadir}/icons/hicolor/scalable/apps/co.dumitres.Shunt.svg
+%{_datadir}/icons/hicolor/scalable/apps/co.dumitres.Shunt*.svg
 %doc %{_datadir}/doc/shunt/README.md
 
 %changelog
